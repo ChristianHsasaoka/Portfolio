@@ -173,7 +173,7 @@ export default function Home() {
         transition={{duration: 3, repeat:Infinity, ease:"easeInOut"}}
         className="w-1/2 flex items-center justify-center relative z-10">
           <Image
-            src="/eu.png"
+            src="/Portfolio/eu.png"
             alt="Avatar"
             width={300}
             height={300}
