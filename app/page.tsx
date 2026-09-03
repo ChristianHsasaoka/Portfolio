@@ -14,6 +14,7 @@ export default function Home() {
   const [email, setEmail] = useState("");
   const [mensagem, setMensagem] = useState("");
   const [idioma, setIdioma] =useState("pt");
+  const [menuAberto, setMenuAberto] = useState(false);
   const enviarEmail = () => {
   const assunto = encodeURIComponent("Contato pelo portfólio");
 
@@ -33,52 +34,81 @@ export default function Home() {
     <main className="bg-black text-white">
 
       <header 
-      className="fixed top-0 left-0 w-full z-50 text-emerald-500 flex items-center justify-between px-10 py-6 blackdrop-blur-md">
-
+        className="fixed top-0 left-0 w-full z-50 text-emerald-500 flex items-center justify-between px-6 md:px-10 py-6 backdrop-blur-md"
+      >
         <p>
           Chris.Dev
         </p>
 
-        <nav className="flex gap-9">
-        <a href="#Inicial">
-          {idioma === "pt"
-          ? "Inicial"
-          : "Initial"}
-        </a>
+        {/* Desktop */}
+        <nav className="hidden md:flex gap-9">
+          <a href="#Inicial">
+            {idioma === "pt" ? "Inicial" : "Initial"}
+          </a>
 
-        <a href="#Sobre">
-          {idioma === "pt"
-          ? "Sobre mim"
-          : "About me"}
-        </a>
+          <a href="#Sobre">
+            {idioma === "pt" ? "Sobre mim" : "About me"}
+          </a>
 
-        <a href="#Tecnologias">
-          {idioma === "pt"
-          ? "Tecnologias"
-          : "Technologies"}
-        </a>
+          <a href="#Tecnologias">
+            {idioma === "pt" ? "Tecnologias" : "Technologies"}
+          </a>
 
-        <a href="#Projetos">
-          {idioma === "pt"
-          ? "Projetos"
-          : "Projects"}
-        </a>
+          <a href="#Projetos">
+            {idioma === "pt" ? "Projetos" : "Projects"}
+          </a>
 
-        <a href="#Contato">
-          {idioma === "pt"
-          ? "Contato"
-          : "Contact"}  
-        </a>  
+          <a href="#Contato">
+            {idioma === "pt" ? "Contato" : "Contact"}
+          </a>
         </nav>
 
         <button
           onClick={() => setIdioma(idioma === "pt" ? "en" : "pt")}
-          className="cursor-pointer"
-          >
+          className="hidden md:block cursor-pointer"
+        >
           {idioma === "pt" ? "EN" : "PT"}
         </button>
 
+        {/* Mobile */}
+        <button
+          onClick={() => setMenuAberto(!menuAberto)}
+          className="md:hidden text-2xl cursor-pointer"
+        >
+          ☰
+        </button>
 
+        {/* Menu mobile */}
+        {menuAberto && (
+          <nav className="absolute top-full left-0 w-full bg-zinc-950 flex flex-col items-center gap-6 py-6 md:hidden">
+            <a href="#Inicial" onClick={() => setMenuAberto(false)}>
+              {idioma === "pt" ? "Inicial" : "Initial"}
+            </a>
+
+            <a href="#Sobre" onClick={() => setMenuAberto(false)}>
+              {idioma === "pt" ? "Sobre mim" : "About me"}
+            </a>
+
+            <a href="#Tecnologias" onClick={() => setMenuAberto(false)}>
+              {idioma === "pt" ? "Tecnologias" : "Technologies"}
+            </a>
+
+            <a href="#Projetos" onClick={() => setMenuAberto(false)}>
+              {idioma === "pt" ? "Projetos" : "Projects"}
+            </a>
+
+            <a href="#Contato" onClick={() => setMenuAberto(false)}>
+              {idioma === "pt" ? "Contato" : "Contact"}
+            </a>
+
+            <button
+              onClick={() => setIdioma(idioma === "pt" ? "en" : "pt")}
+              className="cursor-pointer"
+            >
+              {idioma === "pt" ? "EN" : "PT"}
+            </button>
+          </nav>
+        )}
       </header>
 
 
