@@ -384,16 +384,6 @@ export default function Home() {
           <motion.span
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.1 }}
-            viewport={{ once: false }}
-            className="px-4 py-2 border border-gray-600 rounded-full"
-          >
-            FastAPI
-          </motion.span>
-
-          <motion.span
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, delay: 0.3 }}
             viewport={{ once: false }}
             className="px-4 py-2 border border-gray-600 rounded-full"
@@ -419,16 +409,6 @@ export default function Home() {
             className="px-4 py-2 border border-gray-600 rounded-full"
           >
             PHP
-          </motion.span>
-
-          <motion.span
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.3 }}
-            viewport={{ once: false }}
-            className="px-4 py-2 border border-gray-600 rounded-full"
-          >
-            API REST
           </motion.span>
         </div>
 
@@ -495,6 +475,16 @@ export default function Home() {
             className="px-4 py-2 border border-gray-600 rounded-full"
           >
             SAP
+          </motion.span>
+
+          <motion.span
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            viewport={{ once: false }}
+            className="px-4 py-2 border border-gray-600 rounded-full"
+          >
+            API REST
           </motion.span>
         </div>
       </div>
