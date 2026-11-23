@@ -246,8 +246,8 @@ export default function Home() {
           <br/>
           <br/>
           {idioma === "pt"
-          ? ( <>Atualmente trabalho na CHPRO como <span className="text-emerald-400">Analista Desenvolvedor Júnior</span>, onde sigo ganhando experiência e entendendo cada vez mais como tecnologia funciona no mundo real.</>)
-          : ( <>Currently working at CHPRO as <span className="text-emerald-400">Junior Software Developer</span>, where i continue gaining experience and understanding more about how tecnology works in the real world.</>)}
+          ? ( <>Atualmente trabalho na CHpro como <span className="text-emerald-400">Analista Desenvolvedor Júnior</span>, onde sigo ganhando experiência e entendendo cada vez mais como tecnologia funciona no mundo real.</>)
+          : ( <>Currently working at CHpro as <span className="text-emerald-400">Junior Software Developer</span>, where i continue gaining experience and understanding more about how tecnology works in the real world.</>)}
           <br/>
           <br/>
           {idioma === "pt"
