@@ -355,7 +355,7 @@ export default function Home() {
             viewport={{ once: false }}
             className="px-4 py-2 border border-gray-600 rounded-full"
           >
-            HTML
+            Next.Js
           </motion.span>
 
           <motion.span
@@ -365,7 +365,7 @@ export default function Home() {
             viewport={{ once: false }}
             className="px-4 py-2 border border-gray-600 rounded-full"
           >
-            CSS
+            Tailwind CSS
           </motion.span>
 
         </div>
@@ -398,7 +398,27 @@ export default function Home() {
             viewport={{ once: false }}
             className="px-4 py-2 border border-gray-600 rounded-full"
           >
-            Python
+            Java
+          </motion.span>
+
+          <motion.span
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            viewport={{ once: false }}
+            className="px-4 py-2 border border-gray-600 rounded-full"
+          >
+            C#
+          </motion.span>
+
+          <motion.span
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            viewport={{ once: false }}
+            className="px-4 py-2 border border-gray-600 rounded-full"
+          >
+            PHP
           </motion.span>
 
           <motion.span
@@ -433,6 +453,16 @@ export default function Home() {
           >
             SQL
           </motion.span>
+
+          <motion.span
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.3 }}
+            viewport={{ once: false }}
+            className="px-4 py-2 border border-gray-600 rounded-full"
+          >
+            PostgreSQL
+          </motion.span>
         </div>
 
 
@@ -454,7 +484,7 @@ export default function Home() {
             viewport={{ once: false }}
             className="px-4 py-2 border border-gray-600 rounded-full"
           >
-            Next.js
+            Docker
           </motion.span>
 
           <motion.span
@@ -489,7 +519,7 @@ export default function Home() {
             viewport={{ once: false }}
             className="text-xl text-gray-400 mt-8 text-center"
           >
-            React • Next.js • TypeScript
+            React • Next.js • PHP
           </motion.p>
       </div>
       </section>
