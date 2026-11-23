@@ -887,7 +887,7 @@ export default function Home() {
           <div className="w-1/3 flex flex-col gap-4">
             <motion.input
               type="text"
-              placeholder="Nome"
+              placeholder={idioma === "pt" ? "Nome" : "Name"}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9 }}
@@ -899,7 +899,7 @@ export default function Home() {
 
             <motion.input
               type="email"
-              placeholder="Email"
+              placeholder={idioma === "pt" ? "Email" : "Email"}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9 }}
@@ -910,7 +910,7 @@ export default function Home() {
             />
 
             <motion.textarea
-              placeholder="Mensagem"
+              placeholder={idioma === "pt" ? "Mensagem" : "Message"}
               rows={4}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -931,7 +931,7 @@ export default function Home() {
               viewport={{ once: false }}
               className="border border-gray-500 rounded-lg px-6 py-3 cursor-pointer"
             >
-              Enviar mensagem
+              {idioma === "pt" ? "Enviar mensagem" : "Send Message"}
             </motion.button>
           </div>
 
